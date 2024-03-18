@@ -1,0 +1,158 @@
+{
+	"info": {
+		"_postman_id": "47149441-b6ba-4156-ab4e-8bb3fb16be69",
+		"name": "Challenge-3",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "33567765"
+	},
+	"item": [
+		{
+			"name": "Get List Cars",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/cars",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"cars"
+					],
+					"query": [
+						{
+							"key": "manufacture",
+							"value": "BMW",
+							"disabled": true
+						},
+						{
+							"key": "model",
+							"value": "navigator",
+							"disabled": true
+						},
+						{
+							"key": "capacity",
+							"value": "4",
+							"disabled": true
+						},
+						{
+							"key": "transmission",
+							"value": "manual",
+							"disabled": true
+						},
+						{
+							"key": "available",
+							"value": "false",
+							"disabled": true
+						},
+						{
+							"key": "type",
+							"value": "hatchback",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Car",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/cars/bf6b5c43-1377-4ae0-8908-310c64266f81",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"cars",
+						"bf6b5c43-1377-4ae0-8908-310c64266f81"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post Car",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"plate\": \"BCL-2190\",\r\n    \"manufacture\": \"Ford\",\r\n    \"model\": \"Ranger\",\r\n    \"image\": \"./images/car26.min.jpg\",\r\n    \"rentPerDay\": 1000000,\r\n    \"capacity\": 4,\r\n    \"description\": \" Rear passenger map pockets. Electrochromic rearview mirror. Dual chrome exhaust tips. Locking glove box.\",\r\n    \"availableAt\": \"2022-03-23T15:49:05.563Z\",\r\n    \"transmission\": \"Manual\",\r\n    \"available\": true,\r\n    \"type\": \"Convertible\",\r\n    \"year\": 2020,\r\n    \"options\": [\r\n      \"Keyless Entry\",\r\n      \"Power Windows\",\r\n      \"MP3 (Single Disc)\",\r\n      \"CD (Multi Disc)\",\r\n      \"Navigation\"\r\n    ],\r\n    \"specs\": [\r\n      \"Rear passenger map pockets\",\r\n      \"Electrochromic rearview mirror\",\r\n      \"Dual chrome exhaust tips\",\r\n      \"Locking glove box\",\r\n      \"Pwr front vented disc/rear drum brakes\"\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/cars",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"cars"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Put Car",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"plate\": \"DBE-1289\",\r\n    \"manufacture\": \"MiniCooper\",\r\n    \"model\": \"Clubman\",\r\n    \"image\": \"./images/car10.min.jpg\",\r\n    \"rentPerDay\": 1500000,\r\n    \"capacity\": 4,\r\n    \"description\": \" Rear passenger map pockets. Electrochromic rearview mirror. Dual chrome exhaust tips. Locking glove box.\",\r\n    \"availableAt\": \"2022-03-23T15:49:05.563Z\",\r\n    \"transmission\": \"Automatic\",\r\n    \"available\": true,\r\n    \"type\": \"Convertible\",\r\n    \"year\": 2020,\r\n    \"options\": [\r\n      \"Keyless Entry\",\r\n      \"Power Windows\",\r\n      \"MP3 (Single Disc)\",\r\n      \"CD (Multi Disc)\",\r\n      \"Navigation\"\r\n    ],\r\n    \"specs\": [\r\n      \"Rear passenger map pockets\",\r\n      \"Electrochromic rearview mirror\",\r\n      \"Dual chrome exhaust tips\",\r\n      \"Locking glove box\",\r\n      \"Pwr front vented disc/rear drum brakes\"\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/cars/6e2bc663-5197-441a-957b-bc75e4a2da7c",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"cars",
+						"6e2bc663-5197-441a-957b-bc75e4a2da7c"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Car",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/cars/6e2bc663-5197-441a-957b-bc75e4a2da7c",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"cars",
+						"6e2bc663-5197-441a-957b-bc75e4a2da7c"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

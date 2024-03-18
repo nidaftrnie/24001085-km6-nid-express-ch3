@@ -1,0 +1,146 @@
+* {
+  font-family: Helvetica;
+}
+p,
+#footer a {
+  font-size: 14px;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-weight: bold;
+}
+#logobinar {
+  width: 100px;
+}
+.nav-item button,
+#hero button,
+#cari-mobil,
+#sewa-mobil a button {
+  background-color: #5cb85f;
+  color: white;
+}
+#search-form {
+  width: fit-content;
+  border-radius: 10px;
+}
+#ourservice,
+#whyus,
+#testimonial,
+#sewa-mobil,
+#faq {
+  margin-bottom: 6.2rem;
+}
+#whyus .row {
+  display: flex;
+  justify-content: space-between;
+}
+#carousel {
+  background: #f1f3ff;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  padding: 20px;
+}
+#carousel .row {
+  padding: 20px;
+}
+#carousel h5 {
+  font-size: 14px;
+  font-weight: bold;
+}
+#carousel p {
+  text-align: justify;
+}
+#sewa-mobil .container {
+  background: #0d28a6;
+  color: white;
+  border-radius: 13px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+#footer a {
+  font-weight: bold;
+}
+@media (max-width: 767px) {
+  * {
+    padding-left: 3px;
+  }
+  form {
+    height: 460px;
+    padding-top: 30px;
+  }
+  form .date label {
+    padding-top: 20px;
+  }
+  #car-card .col-md-4 {
+    height: 750px;
+    border-radius: 10px;
+  }
+  #carousel {
+    padding: 5px;
+  }
+  #carousel img {
+    display: block;
+    margin: auto;
+  }
+  #carousel #star {
+    justify-content: center;
+  }
+  .card {
+    margin: auto;
+    max-height: 176px;
+  }
+  #whyus #title {
+    text-align: center;
+  }
+  #sewa-mobil p,
+  h2 {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  #faq {
+    text-align: center;
+  }
+  #footer img {
+    margin-bottom: 10px;
+  }
+}
+@media (min-width: 768px) {
+  @media (max-width: 992px) {
+    .card {
+      height: 250px;
+    }
+  }
+}
+@media (min-width: 992px) {
+  @media (max-width: 1200px) {
+    .card {
+      height: 196px;
+    }
+  }
+}
+@media (min-width: 768px) {
+  .hero {
+    padding-bottom: 30px;
+  }
+  #carousel {
+    max-height: 270px;
+    max-width: 832px;
+  }
+  #sewa-mobil p {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+  #car-card .col-md-4 {
+    border-radius: 10px;
+    padding-bottom: 5px;
+  }
+  #car-card .col-md-4 .card {
+    height: 586px;
+  }
+}
