@@ -1,4 +1,4 @@
-const cars = require("../../data/cars.json");
+const cars = require("./data/cars.json");
 
 exports.getCars = (
   manufacture,
